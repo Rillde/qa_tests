@@ -14,3 +14,4 @@ mvn clean test
 #!/usr/bin/env bash
 # Запустить allure сервер с отчетами
 mvn allure:serve
+```
