@@ -10,8 +10,8 @@ public class Rest {
   @Bean
   public WebTestClient restClient() {
     WebTestClient client = WebTestClient.bindToServer()
-        .baseUrl("https://restful-booker.herokuapp.com")
-        .build();
+      .baseUrl("https://restful-booker.herokuapp.com")
+      .build();
     return client;
   }
 }
