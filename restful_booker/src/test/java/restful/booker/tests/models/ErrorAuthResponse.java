@@ -9,7 +9,7 @@ import lombok.experimental.Accessors;
 @Getter
 @NoArgsConstructor
 @Accessors(chain = true)
-public class AuthResponse {
+public class ErrorAuthResponse {
 
-  private String token;
+  private String reason;
 }

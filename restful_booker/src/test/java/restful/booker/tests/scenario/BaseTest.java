@@ -4,16 +4,14 @@ import org.junit.jupiter.api.BeforeAll;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import restful.booker.tests.config.Config;
-import restful.booker.tests.utils.RestSteps;
+import restful.booker.tests.utils.CommonRestSteps;
 
 @SpringBootTest(classes = Config.class)
-public abstract class BaseScenario {
+public abstract class BaseTest {
 
-  @Autowired
-  protected RestSteps restSteps;
 
   @BeforeAll
-  public static void healthCheck(@Autowired RestSteps restSteps) {
-    restSteps.healthCheck();
+  public static void healthCheck(@Autowired CommonRestSteps commonRestSteps) {
+    commonRestSteps.healthCheck();
   }
 }

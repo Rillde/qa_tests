@@ -37,6 +37,10 @@
       <artifactId>spring-boot-starter-json</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+    </dependency>
+    <dependency>
       <artifactId>allure-junit5</artifactId>
       <groupId>io.qameta.allure</groupId>
     </dependency>

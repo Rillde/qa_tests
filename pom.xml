@@ -23,6 +23,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.boot.version>3.3.13</spring.boot.version>
     <spring.framework.version>6.1.21</spring.framework.version>
+    <junit.version>5.10.3</junit.version>
   </properties>
 
   <build>
@@ -53,20 +54,11 @@
         <version>${spring.boot.version}</version>
       </dependency>
       <dependency>
-        <artifactId>junit-jupiter-api</artifactId>
-        <groupId>org.junit.jupiter</groupId>
-        <version>5.10.3</version>
-      </dependency>
-      <dependency>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <groupId>org.junit.jupiter</groupId>
-        <scope>test</scope>
-        <version>5.10.3</version>
-      </dependency>
-      <dependency>
-        <artifactId>junit-jupiter-params</artifactId>
-        <groupId>org.junit.jupiter</groupId>
-        <version>5.10.3</version>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <artifactId>allure-junit5</artifactId>
