@@ -6,5 +6,11 @@ Restful-booker is a Create Read Update Delete Web API that comes with authentica
 
 ```bash
 #!/usr/bin/env bash
-# пример простого скрипта
-echo "Привет, мир!"
+# Запустить тесты
+mvn clean test
+```
+
+```bash
+#!/usr/bin/env bash
+# Запустить allure сервер с отчетами
+mvn allure:serve
