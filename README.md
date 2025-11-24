@@ -1,4 +1,4 @@
 ## Примеры автоматизации backend и frontend тестов 
 
 Проекты: 
-- [restful-booker](restful-booker/) - REST API
+- [restful-booker](restful_booker/) - REST API
